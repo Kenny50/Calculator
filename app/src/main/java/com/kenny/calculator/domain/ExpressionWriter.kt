@@ -31,7 +31,7 @@ class ExpressionWriter {
     }
 
     private fun prepareForCalculate(): String {
-        val newExpression = expression.takeLastWhile {
+        val newExpression = expression.dropLastWhile {
             it in "$operationSymbols(."
         }
 
