@@ -10,7 +10,7 @@ class ExpressionEvaluator(
     private val expression: List<ExpressionPart>
 ) {
 
-    fun evaluator(): Double {
+    fun evaluate(): Double {
         return evalExpression(expression).value
     }
 
