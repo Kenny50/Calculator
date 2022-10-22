@@ -23,7 +23,7 @@ class ExpressionEvaluatorTest {
             )
         )
 
-        assertThat(evaluator.evaluator()).isEqualTo(4)
+        assertThat(evaluator.evaluate()).isEqualTo(4)
     }
 
     @Test
@@ -42,6 +42,6 @@ class ExpressionEvaluatorTest {
             )
         )
 
-        assertThat(evaluator.evaluator()).isEqualTo(4.5)
+        assertThat(evaluator.evaluate()).isEqualTo(4.5)
     }
 }
