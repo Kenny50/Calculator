@@ -39,7 +39,7 @@ fun CalculatorButton(
                 fontSize = 36.sp,
                 textAlign = TextAlign.Center,
                 color = when (action.highlightLevel) {
-                    HighlightLevel.SemiHighlighted -> MaterialTheme.colorScheme.inverseSurface
+                    HighlightLevel.SemiHighlighted -> MaterialTheme.colorScheme.inverseOnSurface
                     HighlightLevel.Highlighted -> MaterialTheme.colorScheme.onTertiary
                     HighlightLevel.Neutral -> MaterialTheme.colorScheme.onSurfaceVariant
                     HighlightLevel.StrongHighlighted -> MaterialTheme.colorScheme.onPrimary
