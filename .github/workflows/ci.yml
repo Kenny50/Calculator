@@ -1,0 +1,33 @@
+name: Android CI
+
+on:
+  push:
+    branches:
+      - ci
+  pull_request:
+    branches:
+      - ci
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+
+      - name: Set up Android SDK
+        uses: actions/setup-android@v2
+        with:
+          sdk-version: '33'
+
+      - name: Build and test
+        run: |
+          ./gradlew build
+          ./gradlew test
