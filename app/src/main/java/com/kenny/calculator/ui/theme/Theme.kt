@@ -65,6 +65,7 @@ private val LightColorPalette = lightColorScheme(
     outline = GreenGrey50
 )
 
+@Suppress("NewApi")
 @Composable
 fun CalculatorTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
